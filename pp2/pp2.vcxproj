@@ -18,13 +18,47 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gamesence.cpp" />
+    <ClCompile Include="changj.cpp" />
+    <ClCompile Include="front.cpp" />
+    <ClCompile Include="rank.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pp2.h" />
+    <ClInclude Include="front.h" />
+    <ClInclude Include="rank.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sourse\f1.jpeg" />
+    <Image Include="sourse\jidan.jpeg" />
+    <Image Include="sourse\历史积分.png" />
+    <Image Include="sourse\开始游戏.png" />
+    <Image Include="sourse\贩.jpg" />
+    <Image Include="飞机背景\aircraft_1.png" />
+    <Image Include="飞机背景\aircraft_large_explode_1.png" />
+    <Image Include="飞机背景\aircraft_small_idle.png" />
+    <Image Include="飞机背景\飞机.png" />
+    <Image Include="飞机背景\飞机10.png" />
+    <Image Include="飞机背景\飞机11.png" />
+    <Image Include="飞机背景\飞机2.png" />
+    <Image Include="飞机背景\飞机3.png" />
+    <Image Include="飞机背景\飞机4.png" />
+    <Image Include="飞机背景\飞机6.jpeg" />
+    <Image Include="飞机背景\飞机7.png" />
+    <Image Include="飞机背景\飞机8.png" />
+    <Image Include="飞机背景\飞机9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="score.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{735a0127-4fb1-47bf-a3ee-b1a6c7109558}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{852f8f49-5a4b-4ee7-8acb-3ad60e05162c}</ProjectGuid>
+    <RootNamespace>pp2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>初代飞机大战</ProjectName>
+    <ProjectName>eaxyx版本</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,13 +161,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="all.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="all.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

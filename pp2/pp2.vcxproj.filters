@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gamesence.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="changj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="front.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rank.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pp2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="front.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rank.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sourse\f1.jpeg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="sourse\jidan.jpeg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="sourse\贩.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\aircraft_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\aircraft_large_explode_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\aircraft_small_idle.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机3.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机4.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机6.jpeg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机7.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机8.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机9.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机10.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="飞机背景\飞机11.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="sourse\开始游戏.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="sourse\历史积分.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="score.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
