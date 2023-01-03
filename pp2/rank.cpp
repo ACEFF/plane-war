@@ -8,6 +8,7 @@ using namespace std;
 void show_rankimage()//将存贮在txt内的数据输出
 {
 	
+
 	FILE* sfp;
 	wchar_t a[9];
 	int i = 0;

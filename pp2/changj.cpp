@@ -1,6 +1,7 @@
 #include"front.h"
 #include"pp2.h"
 #include"rank.h"
+
 static int s = 0;
 int main()
 {

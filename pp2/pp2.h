@@ -15,6 +15,11 @@
 #include<vector>
 #include<sstream>
 #include <fstream>
+
+#include <mmsystem.h>
+#pragma comment (lib, "winmm.lib")
+#include"resource.h"
+#include"resource1.h"
 typedef int enmey;
 typedef struct enemylist
 {

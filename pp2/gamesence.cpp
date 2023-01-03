@@ -101,7 +101,7 @@ void loadiimage()
 {
 	loadimage(&i_player,_T("sourse\\f1.jpeg"), 50, 50);
 	loadimage(&i_bullon, _T("sourse\\jidan.jpeg"), 50, 50);
-	loadimage(&i_enemy1, _T("sourse\\··.jpg"), 50, 50);
+	loadimage(&i_enemy1, _T("·É»ú±³¾°\\·É»ú3.png"), 50, 50);
 	loadimage(&i_boss1, _T("·É»ú±³¾°\\·É»ú6.jpeg"), 100, 100);
 }
 
@@ -291,6 +291,7 @@ void tiji()
 							score++;
 							cscore++;
 							bullent_hp[31] = 0;
+							PlaySound(MAKEINTRESOURCE(IDR_WAVE1), NULL, SND_RESOURCE | SND_ASYNC);
 						}break;
 						case 311:if (mapback[r->y][r->x] != r->ephone&&cscore>=20)
 						{
@@ -299,6 +300,7 @@ void tiji()
 							score++;
 							cscore++;
 							bullent_hp[31] = 0;
+							PlaySound(MAKEINTRESOURCE(IDR_WAVE1), NULL, SND_RESOURCE | SND_ASYNC);
 						}break;
 					  }
 					}

@@ -28,6 +28,8 @@
     <ClInclude Include="pp2.h" />
     <ClInclude Include="front.h" />
     <ClInclude Include="rank.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="sourse\f1.jpeg" />
@@ -35,6 +37,16 @@
     <Image Include="sourse\历史积分.png" />
     <Image Include="sourse\开始游戏.png" />
     <Image Include="sourse\贩.jpg" />
+    <Image Include="子弹\missile_1.png" />
+    <Image Include="子弹\missile_2.png" />
+    <Image Include="子弹\子弹1.png" />
+    <Image Include="子弹\子弹2.png" />
+    <Image Include="子弹\子弹3.png" />
+    <Image Include="子弹\子弹4.png" />
+    <Image Include="子弹\子弹5.png" />
+    <Image Include="子弹\子弹6.png" />
+    <Image Include="子弹\子弹7.png" />
+    <Image Include="子弹\子弹8.png" />
     <Image Include="飞机背景\aircraft_1.png" />
     <Image Include="飞机背景\aircraft_large_explode_1.png" />
     <Image Include="飞机背景\aircraft_small_idle.png" />
@@ -51,6 +63,14 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="score.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+    <ResourceCompile Include="Resource1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="音频\枪声 _ 迅速锁定半自动猎枪_Freesound.wav" />
+    <Media Include="音频\爆炸(Explode)_爱给网_aigei_com.wav" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

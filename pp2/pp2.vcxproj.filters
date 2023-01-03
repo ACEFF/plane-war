@@ -38,6 +38,12 @@
     <ClInclude Include="rank.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="sourse\f1.jpeg">
@@ -94,10 +100,56 @@
     <Image Include="sourse\历史积分.png">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="子弹\missile_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\missile_2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹3.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹4.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹5.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹6.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹7.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="子弹\子弹8.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="score.txt">
       <Filter>资源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Resource1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="音频\爆炸(Explode)_爱给网_aigei_com.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="音频\枪声 _ 迅速锁定半自动猎枪_Freesound.wav">
+      <Filter>资源文件</Filter>
+    </Media>
   </ItemGroup>
 </Project>

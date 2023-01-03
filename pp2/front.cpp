@@ -21,8 +21,8 @@ int keyboard_front()
 				switch (jianpan)
 				{
 				case '\r':if(y==7)a=0; if (y == 9)a=2; break;
-				case'w':case'W':if (y != 7)y=y-2; break;
-				case's':case'S':if (y != 9)y=y+2; break;
+				case'w':case'W':if (y != 7)y=y-2; PlaySound(MAKEINTRESOURCE(IDR_WAVE2), NULL, SND_RESOURCE | SND_ASYNC); break;
+				case's':case'S':if (y != 9)y=y+2; PlaySound(MAKEINTRESOURCE(IDR_WAVE2), NULL, SND_RESOURCE | SND_ASYNC); break;
 				case'q':case 'Q':a--; break;
 				default:return a; break;
 				}

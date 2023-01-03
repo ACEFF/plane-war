@@ -6,3 +6,7 @@ score:23
 score:0
 score:-4
 score:25
+score:23
+score:23
+score:11
+score:16
