@@ -26,7 +26,7 @@ void cin_rank(int score)//´æÈë»ý·Ö
 	ofstream outfile;
 	outfile.open("score.txt",ios::app);
 
-	outfile << endl << "score:" << score;
+	outfile << ' '<<endl << "score:" << score;
 	outfile.close();
 
 

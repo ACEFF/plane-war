@@ -99,8 +99,9 @@ void kuaikaboss(elist** q)
 
 void loadiimage()
 {
+	loadimage(&i_ebullon, _T("子弹\\子弹3.png"), 50, 50);
 	loadimage(&i_player,_T("sourse\\f1.jpeg"), 50, 50);
-	loadimage(&i_bullon, _T("sourse\\jidan.jpeg"), 50, 50);
+	loadimage(&i_bullon, _T("子弹\\子弹1.png"), 50, 50);
 	loadimage(&i_enemy1, _T("飞机背景\\飞机3.png"), 50, 50);
 	loadimage(&i_boss1, _T("飞机背景\\飞机6.jpeg"), 100, 100);
 }
@@ -153,8 +154,8 @@ void show()
 					putimage(r->x * 50, r->y * 50, &i_boss1);
 					for (i = 0; i < bucount; i++)
 					{
-						if (eullent[i].hp = 1)
-							putimage(eullent[i].x * 50, eullent[i].y * 50, &i_bullon);
+						if (eullent[i].hp == 1)
+							putimage(eullent[i].x * 50, eullent[i].y * 50, &i_ebullon);
 
 					}
 				}
@@ -293,7 +294,8 @@ void tiji()
 							bullent_hp[31] = 0;
 							PlaySound(MAKEINTRESOURCE(IDR_WAVE1), NULL, SND_RESOURCE | SND_ASYNC);
 						}break;
-						case 311:if (mapback[r->y][r->x] != r->ephone&&cscore>=20)
+						case 311:if ( cscore >= 20)
+							if(mapback[r->y][r->x] != r->ephone || mapback[r->y][r->x + 1] != r->ephone || mapback[r->y + 1][r->x] != r->ephone || mapback[r->y + 1][r->x + 1] != r->ephone)
 						{
 							r->hp--;
 							mapback[r->y][r->x] = 0;
@@ -388,6 +390,9 @@ void ShowEnmey(elist *q)
 				{
 					
 					mapback[r->y][r->x] = r->ephone;
+					mapback[r->y+1][r->x] = r->ephone;
+					mapback[r->y+1][r->x+1] = r->ephone;
+					mapback[r->y][r->x+1] = r->ephone;
 					
 					enemybullent(r);
 				}
@@ -462,12 +467,16 @@ void enemybullent(elist *q)//敌机子弹加载
 		case 11:
 			if (eullent[i].y != 2)
 				isfire = false;
-		if(isfire)
+		if(isfire)//当y=2时让子弹从飞机所在处发射
+		{
 			eullent[i].x = q->x;
+			eullent[i].hp = 1;
+		}
 			eullent[i].y++;
 			if (eullent[i].y == 14)
 			{
 				eullent[i].y = 2;
+				
 			}
 			mapback[eullent[i].y - 1][eullent[i].x] = 0;
 			mapback[eullent[i].y][eullent[i].x] = eullent[i].type;
@@ -483,7 +492,7 @@ void load_score(int a)//当主角飞机死亡输出积分
 	fopen_s(&sfp, "score.txt", "a");
 	if (php == 0)
 	{
-		fprintf(sfp,"\nscore:%d",score);
+		fprintf(sfp," \nscore:%d",score);
 		
 		exit(1);
 	}
